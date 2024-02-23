@@ -1,5 +1,4 @@
-﻿
-namespace ViewProject
+﻿namespace ViewProject
 {
     partial class Form1
     {
@@ -38,4 +37,3 @@ namespace ViewProject
         #endregion
     }
 }
-
