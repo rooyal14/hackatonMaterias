@@ -26,9 +26,10 @@ namespace ControllerProject
             professores.Remove(professor);
         }
 
-        //public Professor getProfessorById(string id)
+        public Professor getProfessorById(string id)
         {
-            
+            var professorSelecionado = professores.Where(x => x.Id == id).FirstOrDefault();
+            return professorSelecionado;
         }
 
     }
