@@ -35,7 +35,13 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.fmMatricula = new System.Windows.Forms.MaskedTextBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fmNome = new System.Windows.Forms.TextBox();
@@ -46,19 +52,13 @@
             this.fmSenha = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.fmConfirmaSenha = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.fmMatricula = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label9
@@ -137,8 +137,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.71988F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.28012F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.19464F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.80536F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 5);
@@ -171,16 +171,91 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 479);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // fmMatricula
+            // tableLayoutPanel4
             // 
-            this.fmMatricula.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmMatricula.Location = new System.Drawing.Point(310, 2);
-            this.fmMatricula.Margin = new System.Windows.Forms.Padding(2);
-            this.fmMatricula.Mask = "0000,000,000,000";
-            this.fmMatricula.Name = "fmMatricula";
-            this.fmMatricula.Size = new System.Drawing.Size(258, 50);
-            this.fmMatricula.TabIndex = 1;
-            this.fmMatricula.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.checkBox5, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.checkBox1, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(402, 242);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(433, 56);
+            this.tableLayoutPanel4.TabIndex = 28;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.checkBox5.Location = new System.Drawing.Point(219, 3);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(101, 49);
+            this.checkBox5.TabIndex = 28;
+            this.checkBox5.Text = "Não";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(95, 49);
+            this.checkBox1.TabIndex = 27;
+            this.checkBox1.Text = "Sim";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.checkBox3, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.checkBox2, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(402, 302);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(433, 56);
+            this.tableLayoutPanel3.TabIndex = 22;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.checkBox3.Location = new System.Drawing.Point(219, 3);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(173, 49);
+            this.checkBox3.TabIndex = 26;
+            this.checkBox3.Text = "16 Horas";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.checkBox2.Location = new System.Drawing.Point(3, 3);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(173, 49);
+            this.checkBox2.TabIndex = 25;
+            this.checkBox2.Text = "10 Horas";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(3, 300);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(374, 45);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Carga Horária Semanal:";
             // 
             // label1
             // 
@@ -188,9 +263,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 45);
+            this.label1.Size = new System.Drawing.Size(263, 45);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Matrícula:";
+            this.label1.Text = "Matrícula SUAP:";
             // 
             // label2
             // 
@@ -206,10 +281,10 @@
             // 
             this.fmNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.fmNome.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmNome.Location = new System.Drawing.Point(311, 63);
+            this.fmNome.Location = new System.Drawing.Point(403, 63);
             this.fmNome.MaxLength = 100;
             this.fmNome.Name = "fmNome";
-            this.fmNome.Size = new System.Drawing.Size(646, 50);
+            this.fmNome.Size = new System.Drawing.Size(565, 50);
             this.fmNome.TabIndex = 3;
             // 
             // label3
@@ -226,10 +301,10 @@
             // 
             this.fmEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.fmEmail.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmEmail.Location = new System.Drawing.Point(311, 123);
+            this.fmEmail.Location = new System.Drawing.Point(403, 123);
             this.fmEmail.MaxLength = 100;
             this.fmEmail.Name = "fmEmail";
-            this.fmEmail.Size = new System.Drawing.Size(646, 50);
+            this.fmEmail.Size = new System.Drawing.Size(565, 50);
             this.fmEmail.TabIndex = 5;
             // 
             // label4
@@ -245,7 +320,7 @@
             // fmTelefone
             // 
             this.fmTelefone.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmTelefone.Location = new System.Drawing.Point(310, 182);
+            this.fmTelefone.Location = new System.Drawing.Point(402, 182);
             this.fmTelefone.Margin = new System.Windows.Forms.Padding(2);
             this.fmTelefone.Mask = "(99) 00000-0000";
             this.fmTelefone.Name = "fmTelefone";
@@ -255,7 +330,7 @@
             // fmSenha
             // 
             this.fmSenha.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmSenha.Location = new System.Drawing.Point(311, 363);
+            this.fmSenha.Location = new System.Drawing.Point(403, 363);
             this.fmSenha.MaxLength = 10;
             this.fmSenha.Name = "fmSenha";
             this.fmSenha.PasswordChar = '*';
@@ -276,33 +351,13 @@
             // fmConfirmaSenha
             // 
             this.fmConfirmaSenha.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmConfirmaSenha.Location = new System.Drawing.Point(311, 424);
+            this.fmConfirmaSenha.Location = new System.Drawing.Point(403, 424);
             this.fmConfirmaSenha.MaxLength = 10;
             this.fmConfirmaSenha.Name = "fmConfirmaSenha";
             this.fmConfirmaSenha.PasswordChar = '*';
             this.fmConfirmaSenha.Size = new System.Drawing.Size(298, 50);
             this.fmConfirmaSenha.TabIndex = 12;
             this.fmConfirmaSenha.UseSystemPasswordChar = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(3, 240);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(255, 45);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "É Coordenador:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(3, 300);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(239, 45);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Carga Horária:";
             // 
             // label10
             // 
@@ -314,81 +369,26 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "Senha:";
             // 
-            // checkBox2
+            // label5
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.checkBox2.Location = new System.Drawing.Point(3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(173, 49);
-            this.checkBox2.TabIndex = 25;
-            this.checkBox2.Text = "10 Horas";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(3, 240);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(255, 45);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "É Coordenador:";
             // 
-            // tableLayoutPanel3
+            // fmMatricula
             // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Controls.Add(this.checkBox3, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.checkBox2, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(310, 302);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(433, 56);
-            this.tableLayoutPanel3.TabIndex = 22;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.checkBox3.Location = new System.Drawing.Point(219, 3);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(173, 49);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.Text = "16 Horas";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Controls.Add(this.checkBox5, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.checkBox1, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(310, 242);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(433, 56);
-            this.tableLayoutPanel4.TabIndex = 28;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 49);
-            this.checkBox1.TabIndex = 27;
-            this.checkBox1.Text = "Sim";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.checkBox5.Location = new System.Drawing.Point(219, 3);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(101, 49);
-            this.checkBox5.TabIndex = 28;
-            this.checkBox5.Text = "Não";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.fmMatricula.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.fmMatricula.Location = new System.Drawing.Point(402, 2);
+            this.fmMatricula.Margin = new System.Windows.Forms.Padding(2);
+            this.fmMatricula.Mask = "0000,000,000,000";
+            this.fmMatricula.Name = "fmMatricula";
+            this.fmMatricula.Size = new System.Drawing.Size(258, 50);
+            this.fmMatricula.TabIndex = 1;
+            this.fmMatricula.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // FormCadastroProfessor
             // 
@@ -405,10 +405,10 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
