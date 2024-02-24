@@ -38,7 +38,7 @@ namespace ViewProject
             this.fmSenha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.fmEmail = new System.Windows.Forms.TextBox();
+            this.fmMatricula = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -110,16 +110,17 @@ namespace ViewProject
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.82566F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.17434F));
+            this.tableLayoutPanel1.Controls.Add(this.fmMatricula, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.fmSenha, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.fmEmail, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 76);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.57983F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.42017F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(717, 119);
             this.tableLayoutPanel1.TabIndex = 22;
             // 
@@ -128,7 +129,7 @@ namespace ViewProject
             this.fmSenha.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.fmSenha.Location = new System.Drawing.Point(180, 62);
             this.fmSenha.Name = "fmSenha";
-            this.fmSenha.Size = new System.Drawing.Size(533, 50);
+            this.fmSenha.Size = new System.Drawing.Size(259, 50);
             this.fmSenha.TabIndex = 2;
             this.fmSenha.UseSystemPasswordChar = true;
             // 
@@ -152,13 +153,16 @@ namespace ViewProject
             this.label3.TabIndex = 8;
             this.label3.Text = "Matrícula:";
             // 
-            // fmEmail
+            // fmMatricula
             // 
-            this.fmEmail.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmEmail.Location = new System.Drawing.Point(180, 3);
-            this.fmEmail.Name = "fmEmail";
-            this.fmEmail.Size = new System.Drawing.Size(533, 50);
-            this.fmEmail.TabIndex = 1;
+            this.fmMatricula.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.fmMatricula.Location = new System.Drawing.Point(179, 2);
+            this.fmMatricula.Margin = new System.Windows.Forms.Padding(2);
+            this.fmMatricula.Mask = "0000,000,000,000";
+            this.fmMatricula.Name = "fmMatricula";
+            this.fmMatricula.Size = new System.Drawing.Size(260, 50);
+            this.fmMatricula.TabIndex = 11;
+            this.fmMatricula.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // FormLogin
             // 
@@ -189,8 +193,8 @@ namespace ViewProject
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox fmSenha;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox fmEmail;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox fmMatricula;
     }
 }
 

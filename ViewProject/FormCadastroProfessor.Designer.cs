@@ -35,7 +35,7 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.fmCPF = new System.Windows.Forms.MaskedTextBox();
+            this.fmMatricula = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fmNome = new System.Windows.Forms.TextBox();
@@ -103,33 +103,36 @@
             // btnLimpar
             // 
             this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpar.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(197)))), ((int)(((byte)(147)))));
+            this.btnLimpar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.btnLimpar.Location = new System.Drawing.Point(327, 3);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(318, 70);
             this.btnLimpar.TabIndex = 21;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(197)))), ((int)(((byte)(147)))));
+            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.btnVoltar.Location = new System.Drawing.Point(3, 3);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(318, 70);
             this.btnVoltar.TabIndex = 20;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(197)))), ((int)(((byte)(147)))));
+            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.btnCadastrar.Location = new System.Drawing.Point(651, 3);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(320, 70);
             this.btnCadastrar.TabIndex = 13;
             this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
@@ -139,7 +142,6 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.fmCPF, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.fmNome, 1, 1);
@@ -152,6 +154,7 @@
             this.tableLayoutPanel1.Controls.Add(this.fmConfirmaSenha, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.fmMatricula, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 82);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -168,16 +171,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 479);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
-            // fmCPF
+            // fmMatricula
             // 
-            this.fmCPF.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmCPF.Location = new System.Drawing.Point(310, 2);
-            this.fmCPF.Margin = new System.Windows.Forms.Padding(2);
-            this.fmCPF.Mask = "0000,000,000,000";
-            this.fmCPF.Name = "fmCPF";
-            this.fmCPF.Size = new System.Drawing.Size(247, 50);
-            this.fmCPF.TabIndex = 1;
-            this.fmCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.fmMatricula.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.fmMatricula.Location = new System.Drawing.Point(310, 2);
+            this.fmMatricula.Margin = new System.Windows.Forms.Padding(2);
+            this.fmMatricula.Mask = "0000,000,000,000";
+            this.fmMatricula.Name = "fmMatricula";
+            this.fmMatricula.Size = new System.Drawing.Size(258, 50);
+            this.fmMatricula.TabIndex = 1;
+            this.fmMatricula.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // label1
             // 
@@ -256,7 +259,7 @@
             this.fmSenha.MaxLength = 10;
             this.fmSenha.Name = "fmSenha";
             this.fmSenha.PasswordChar = '*';
-            this.fmSenha.Size = new System.Drawing.Size(247, 50);
+            this.fmSenha.Size = new System.Drawing.Size(298, 50);
             this.fmSenha.TabIndex = 10;
             this.fmSenha.UseSystemPasswordChar = true;
             // 
@@ -277,7 +280,7 @@
             this.fmConfirmaSenha.MaxLength = 10;
             this.fmConfirmaSenha.Name = "fmConfirmaSenha";
             this.fmConfirmaSenha.PasswordChar = '*';
-            this.fmConfirmaSenha.Size = new System.Drawing.Size(247, 50);
+            this.fmConfirmaSenha.Size = new System.Drawing.Size(298, 50);
             this.fmConfirmaSenha.TabIndex = 12;
             this.fmConfirmaSenha.UseSystemPasswordChar = true;
             // 
@@ -421,7 +424,7 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox fmCPF;
+        private System.Windows.Forms.MaskedTextBox fmMatricula;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox fmNome;
