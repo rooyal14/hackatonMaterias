@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormPreferenciua.cs">
+    <Compile Include="FormPreferencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPreferenciua.Designer.cs">
-      <DependentUpon>FormPreferenciua.cs</DependentUpon>
+    <Compile Include="FormPreferencia.Designer.cs">
+      <DependentUpon>FormPreferencia.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTurma.cs">
       <SubType>Form</SubType>
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPreferenciua.resx">
-      <DependentUpon>FormPreferenciua.cs</DependentUpon>
+    <EmbeddedResource Include="FormPreferencia.resx">
+      <DependentUpon>FormPreferencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRecuperarSenha.resx">
       <DependentUpon>FormRecuperarSenha.cs</DependentUpon>
