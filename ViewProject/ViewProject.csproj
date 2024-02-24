@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormGestaoCoordenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestaoCoordenador.Designer.cs">
+      <DependentUpon>FormGestaoCoordenador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPreferencia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPreferencia.Designer.cs">
       <DependentUpon>FormPreferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios.Designer.cs">
+      <DependentUpon>FormRelatorios.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTurma.cs">
       <SubType>Form</SubType>
@@ -82,8 +94,17 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVisualProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVisualProfessor.Designer.cs">
+      <DependentUpon>FormVisualProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGestaoCoordenador.resx">
+      <DependentUpon>FormGestaoCoordenador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroDisciplina.resx">
       <DependentUpon>FormCadastroDisciplina.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,8 +120,14 @@
     <EmbeddedResource Include="FormRecuperarSenha.resx">
       <DependentUpon>FormRecuperarSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios.resx">
+      <DependentUpon>FormRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTurma.resx">
       <DependentUpon>FormTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVisualProfessor.resx">
+      <DependentUpon>FormVisualProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

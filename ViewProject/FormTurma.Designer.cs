@@ -44,6 +44,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +69,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnLimpar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnVoltar, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnConfirmar, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 408);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 471);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -124,7 +126,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(3, 240);
+            this.label5.Location = new System.Drawing.Point(3, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 45);
             this.label5.TabIndex = 13;
@@ -134,7 +136,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(3, 180);
+            this.label4.Location = new System.Drawing.Point(3, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(191, 45);
             this.label4.TabIndex = 6;
@@ -144,7 +146,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(3, 120);
+            this.label3.Location = new System.Drawing.Point(3, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 45);
             this.label3.TabIndex = 4;
@@ -154,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(3, 60);
+            this.label2.Location = new System.Drawing.Point(3, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 45);
             this.label2.TabIndex = 2;
@@ -175,6 +177,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.19464F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.80536F));
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.comboBox4, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.comboBox3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 2);
@@ -185,24 +188,26 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.fmMatricula, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox5, 1, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 75);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 302);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 364);
             this.tableLayoutPanel1.TabIndex = 22;
             // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(403, 63);
+            this.comboBox2.Location = new System.Drawing.Point(403, 62);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(565, 53);
             this.comboBox2.TabIndex = 26;
@@ -211,7 +216,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(403, 123);
+            this.comboBox1.Location = new System.Drawing.Point(403, 121);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(565, 53);
             this.comboBox1.TabIndex = 27;
@@ -220,7 +225,7 @@
             // 
             this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(403, 183);
+            this.comboBox3.Location = new System.Drawing.Point(403, 180);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(565, 53);
             this.comboBox3.TabIndex = 28;
@@ -229,17 +234,36 @@
             // 
             this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(403, 243);
+            this.comboBox4.Location = new System.Drawing.Point(403, 239);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(565, 53);
             this.comboBox4.TabIndex = 29;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(403, 298);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(565, 53);
+            this.comboBox5.TabIndex = 30;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(3, 295);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(188, 45);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Disciplinas:";
             // 
             // FormTurma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(241)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1020, 519);
+            this.ClientSize = new System.Drawing.Size(1020, 606);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -270,5 +294,7 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }
