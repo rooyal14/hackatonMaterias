@@ -1,6 +1,6 @@
 ﻿namespace ViewProject
 {
-    partial class FormCadastroProfessor
+    partial class FormTurma
     {
         /// <summary>
         /// Required designer variable.
@@ -65,23 +65,22 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(410, 563);
+            this.label9.Location = new System.Drawing.Point(410, 554);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(363, 17);
-            this.label9.TabIndex = 21;
+            this.label9.TabIndex = 25;
             this.label9.Text = "A senha deve conter no mínimo 8 e no máximo 10 carateres.";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(12, 18);
+            this.label6.Location = new System.Drawing.Point(12, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(461, 51);
-            this.label6.TabIndex = 20;
+            this.label6.TabIndex = 24;
             this.label6.Text = "Cadastro de Professores:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -92,13 +91,13 @@
             this.tableLayoutPanel2.Controls.Add(this.btnLimpar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnVoltar, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnConfirmar, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 600);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 591);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(974, 77);
-            this.tableLayoutPanel2.TabIndex = 19;
+            this.tableLayoutPanel2.TabIndex = 23;
             // 
             // btnLimpar
             // 
@@ -155,7 +154,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.fmMatricula, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 82);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 73);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
@@ -169,7 +168,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 479);
-            this.tableLayoutPanel1.TabIndex = 18;
+            this.tableLayoutPanel1.TabIndex = 22;
             // 
             // tableLayoutPanel4
             // 
@@ -207,7 +206,6 @@
             this.checkBox1.TabIndex = 27;
             this.checkBox1.Text = "Sim";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // tableLayoutPanel3
             // 
@@ -245,7 +243,6 @@
             this.checkBox2.TabIndex = 25;
             this.checkBox2.Text = "10 Horas";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label8
             // 
@@ -390,19 +387,18 @@
             this.fmMatricula.TabIndex = 1;
             this.fmMatricula.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // FormCadastroProfessor
+            // FormTurma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(241)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1018, 803);
+            this.ClientSize = new System.Drawing.Size(1392, 926);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "FormCadastroProfessor";
-            this.Text = "Subject Distributor System - Cadastro de Professores";
-            this.Load += new System.EventHandler(this.FormCadastroProfessor_Load);
+            this.Name = "FormTurma";
+            this.Text = "Subject Distributor System - Cadastro de Turmas";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -424,8 +420,13 @@
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox fmMatricula;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox fmNome;
@@ -438,11 +439,6 @@
         private System.Windows.Forms.TextBox fmConfirmaSenha;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.MaskedTextBox fmMatricula;
     }
 }

@@ -36,5 +36,10 @@ namespace ViewProject
         {
 
         }
+
+        private void FormCadastroProfessor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
