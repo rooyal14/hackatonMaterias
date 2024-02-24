@@ -20,24 +20,27 @@ namespace ConsoleTestProject
             ProfessorController professorController = new ProfessorController();
             //criando professor
             Professor professor1 = new Professor("10");
-            
-            turnos.ToList<string>().ForEach((x) => professor1.PrefTurno.Add(x));
+            professor1.Preferencias.PrefTurno = turnos.ToList<string>();
+            professor1.Preferencias.PrefMateria = materias.ToList<string>();
+            professor1.Preferencias.PrefCurso = cursos.ToList<string>();
+            professor1.Preferencias.PrefTurma = turmas.ToList<string>();
+
 
 
 
             //adicionando professor à lista do controller
             professorController.addProfessorToList(professor1);
             
+            
+            
             Professor professor2 = new Professor("5");
 
 
-
-
-
             professorController.addProfessorToList(professor2);
-            Console.WriteLine(professorController.getProfessorById("10").PrefTurno[0]);
-            Console.WriteLine(professorController.getProfessorById("10").PrefTurno[1]);
-            Console.WriteLine(professorController.getProfessorById("10").PrefTurno[2]);
+            
+            Console.WriteLine(professorController.getProfessorById("10").Preferencias.PrefTurno[0]);
+            Console.WriteLine(professorController.getProfessorById("10").Preferencias.PrefTurno[1]);
+            Console.WriteLine(professorController.getProfessorById("10").Preferencias.PrefTurno[2]);
             Console.WriteLine(professorController.getProfessorById("5").Id);
 
 

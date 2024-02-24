@@ -9,18 +9,12 @@ namespace ModelProject
     public class Professor
     {
         private string id;
-        private IList<string> prefTurno;
-        private IList<string> prefMateria;
-        private IList<string> prefCurso;
-        private IList<string> prefTurma;
+        private Preferencias preferencias;
 
         public Professor(string id)
         {
             this.id = id;
-            prefTurno = new List<string>();
-            prefMateria = new List<string>();
-            prefCurso = new List<string>();
-            prefTurma = new List<string>();
+            this.preferencias = new Preferencias();
         }
 
         public string Id
@@ -29,25 +23,10 @@ namespace ModelProject
             set { id = value; }
         }
 
-        public IList<string> PrefTurno
+        public Preferencias Preferencias
         {
-            get { return prefTurno; }
-            set { prefTurno = value; }
-        }
-        public IList<string> PrefMateria
-        {
-            get { return prefMateria; }
-            set { prefMateria = value; }
-        }
-        public IList<string> PrefCurso
-        {
-            get { return prefCurso; }
-            set { prefCurso = value; }
-        }
-        public IList<string> PrefTurma
-        {
-            get { return prefTurma; }
-            set { prefTurma = value; }
+            get { return preferencias; }
+            set { preferencias = value; }
         }
 
 
