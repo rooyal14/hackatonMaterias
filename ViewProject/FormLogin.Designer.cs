@@ -76,7 +76,7 @@ namespace ViewProject
             this.tableLayoutPanel2.Controls.Add(this.btnCadastro, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnEntrar, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(14, 205);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -115,7 +115,7 @@ namespace ViewProject
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.fmEmail, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 76);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.57983F));
@@ -126,7 +126,7 @@ namespace ViewProject
             // fmSenha
             // 
             this.fmSenha.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmSenha.Location = new System.Drawing.Point(181, 62);
+            this.fmSenha.Location = new System.Drawing.Point(180, 62);
             this.fmSenha.Name = "fmSenha";
             this.fmSenha.Size = new System.Drawing.Size(533, 50);
             this.fmSenha.TabIndex = 2;
@@ -155,7 +155,7 @@ namespace ViewProject
             // fmEmail
             // 
             this.fmEmail.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.fmEmail.Location = new System.Drawing.Point(181, 3);
+            this.fmEmail.Location = new System.Drawing.Point(180, 3);
             this.fmEmail.Name = "fmEmail";
             this.fmEmail.Size = new System.Drawing.Size(533, 50);
             this.fmEmail.TabIndex = 1;
@@ -171,7 +171,7 @@ namespace ViewProject
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "FormLogin";
-            this.Text = "Subject Distributor System - Default Software House";
+            this.Text = "Subject Distributor System - A Default Software House Solution";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
