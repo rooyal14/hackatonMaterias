@@ -33,7 +33,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.fmMatricula = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.Controls.Add(this.btnLimpar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnVoltar, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnCadastrar, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnConfirmar, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 600);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -123,16 +123,16 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // btnCadastrar
+            // btnConfirmar
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(197)))), ((int)(((byte)(147)))));
-            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.btnCadastrar.Location = new System.Drawing.Point(651, 3);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(320, 70);
-            this.btnCadastrar.TabIndex = 13;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(197)))), ((int)(((byte)(147)))));
+            this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.btnConfirmar.Location = new System.Drawing.Point(651, 3);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(320, 70);
+            this.btnConfirmar.TabIndex = 13;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
@@ -421,7 +421,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.MaskedTextBox fmMatricula;
