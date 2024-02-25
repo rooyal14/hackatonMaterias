@@ -9,26 +9,26 @@ namespace ControllerProject
 {
     public class DisciplinaController
     {
-        private IList<Disciplina> Disciplinas;
+        private IList<Disciplina> disciplinas;
 
         public DisciplinaController()
         {
-            Disciplinas = new List<Disciplina>();
+            disciplinas = new List<Disciplina>();
         }
 
         public void addDisciplinaToList(Disciplina Disciplina)
         {
-            Disciplinas.Add(Disciplina);
+            disciplinas.Add(Disciplina);
         }
 
         public void removeDisciplinaFromList(Disciplina Disciplina)
         {
-            Disciplinas.Remove(Disciplina);
+            disciplinas.Remove(Disciplina);
         }
 
         public Disciplina getDisciplinaById(string id)
         {
-            var DisciplinaSelecionado = Disciplinas.Where(x => x.Id == id).FirstOrDefault();
+            var DisciplinaSelecionado = disciplinas.Where(x => x.Id == id).FirstOrDefault();
             return DisciplinaSelecionado;
         }
 
